@@ -46,7 +46,7 @@ const cards = [
     badge: "UI-UX DESIGN",
     title: "Project Five",
     subtitle:
-      "Complex product system for enterprise use. product system for enterprise use.",
+      "Complex product system for enterprise use. product system for enterprise use. product system for enterprise use.product system for enterprise use.",
     link: "#",
   },
   {
@@ -85,7 +85,10 @@ const Portfolio: React.FC = () => {
   const onMouseLeave = () => setIsDragging(false);
 
   return (
-    <section className="lg:py-20 py-14 relative m-auto px-4 md:px-10 dark:bg-gray-900 overflow-x-hidden">
+    <section
+      id="projects"
+      className="lg:py-20 py-14 relative m-auto px-4 md:px-10 dark:bg-gray-900 overflow-x-hidden"
+    >
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
           Portfolio
@@ -131,7 +134,7 @@ const Portfolio: React.FC = () => {
                 href={card.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 w-52 h-12 border border-purple-400 text-purple-600 hover:bg-purple-100 hover:dark:bg-purple-600 hover:dark:text-white rounded-md transition"
+                className="inline-flex items-center justify-center gap-2 w-36 h-10 border border-purple-400 text-purple-600 hover:bg-purple-100 hover:dark:bg-purple-600 hover:dark:text-white rounded-md transition"
               >
                 View Project →
               </a>
