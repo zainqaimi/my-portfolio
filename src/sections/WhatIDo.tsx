@@ -60,8 +60,8 @@ const cards: CardItem[] = [
 
 const WhatIDo: React.FC = () => {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 px-6 md:px-20 py-12">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
+    <section className="bg-gray-100 dark:bg-gray-900 px-6 md:px-10 py-12">
+      <div className=" mx-auto flex flex-col md:flex-row items-start gap-10">
         {/* Left Column */}
         <div className="md:w-1/2 self-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -103,7 +103,7 @@ const WhatIDo: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg border-l-4 hover:border-purple-600"
+                className="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg hover:shadow-purple-200 border-l-4 hover:border-purple-600"
               >
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   {card.title}

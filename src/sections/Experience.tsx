@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
+import resume from "../assets/resume/ZainUlAbdinResume.pdf";
 export default function Experience() {
   return (
     <div className="dark:bg-gray-900 transition-colors duration-500  md:px-10 px-6">
@@ -57,7 +57,7 @@ export default function Experience() {
               My Project
             </a>
             <a
-              href="/resume.pdf"
+              href={resume}
               download
               className="flex items-center justify-center gap-2 border-2 border-[#a53dff] text-[#a53dff] dark:text-[#a53dff] px-6 py-3 rounded-md hover:bg-[#a53dff] hover:text-white dark:hover:text-white transition"
             >

@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ThemeToggle from "./ThemeToggle";
 import logo from "../assets/Logo.svg";
-
+import resume from "../assets/resume/ZainUlAbdinResume.pdf";
 const navItems = [
   { name: "About Me", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* Right Side */}
         <div className="hidden lg:flex items-center gap-3">
           <a
-            href="/resume.pdf"
+            href={resume}
             download
             className="bg-[#a53dff] text-white px-4 py-2 rounded-md hover:opacity-80 transition"
           >

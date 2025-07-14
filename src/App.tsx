@@ -12,6 +12,7 @@ import Contact from "./sections/Contact";
 import { BiArrowToTop } from "react-icons/bi";
 import ThemeToggle from "./components/ThemeToggle";
 import WhatIDo from "./sections/WhatIDo";
+import Testimonials from "./sections/Testimonials";
 
 export default function App() {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -42,16 +43,17 @@ export default function App() {
       <Experience />
       <WorkProcess />
       <Portfolio />
-      <HappyClients />
       <DiscussSection />
       <WhatIDo />
+      <HappyClients />
+      <Testimonials />
       <Contact />
       <Footer />
 
       {/* Floating Buttons Container */}
       <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
         {/* Theme Toggle */}
-        <div className=" mb-2 bg-slate-500 text-white dark:bg-purple-500 p-1 rounded-full shadow-sm transition">
+        <div className=" mb-2 bg-slate-200 text-white dark:bg-purple-500 p-1 rounded-full shadow-sm transition">
           <ThemeToggle />
         </div>
         {/* Scroll to Top Button */}

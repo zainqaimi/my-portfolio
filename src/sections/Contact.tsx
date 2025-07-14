@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto px-4 sm:px-6 py-12 sm:py-16 ">
+    <section id="contact" className="mx-auto md:px-10  px-6 py-12 sm:py-16 ">
       <div className="z-10 md:-mb-52 relative bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 sm:p-10 md:p-12 border border-slate-50 dark:border-gray-800">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Left Side */}
