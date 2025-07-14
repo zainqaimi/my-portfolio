@@ -60,12 +60,10 @@ export default function Navbar() {
           >
             Resume ↓
           </a>
-          <ThemeToggle />
         </div>
 
         {/* Mobile Nav Button */}
         <div className="lg:hidden flex items-center gap-2">
-          <ThemeToggle />
           <button onClick={() => setIsOpen(true)}>
             <Bars3Icon className="h-6 w-6 text-black dark:text-white" />
           </button>
