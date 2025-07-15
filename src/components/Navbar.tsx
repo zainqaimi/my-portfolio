@@ -1,8 +1,9 @@
 import { useState, Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog, Transition, TransitionChild } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.svg";
 import resume from "../assets/resume/ZainUlAbdinResume.pdf";
+
 const navItems = [
   { name: "About Me", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -70,23 +71,38 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Dialog Menu with Smooth Transition */}
+      {/* Mobile Dialog Menu with Smooth Top Slide */}
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="lg:hidden relative z-50"
+          className="lg:hidden fixed inset-0 z-50"
           onClose={() => setIsOpen(false)}
         >
-          <Transition.Child
+          {/* Background overlay */}
+          <TransitionChild
             as={Fragment}
-            enter="transition ease-out duration-300"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="transition ease-in duration-200"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
+            enter="transition-opacity ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-[#a53dff] dark:bg-[#a53dff] flex flex-col items-center justify-center gap-8">
+            <div className="fixed inset-0 bg-black/40 backdrop-blur-sm" />
+          </TransitionChild>
+
+          {/* Sliding Top Sheet (Half Screen) */}
+          <TransitionChild
+            as={Fragment}
+            enter="transition-transform duration-300 ease-out"
+            enterFrom="-translate-y-full"
+            enterTo="translate-y-0"
+            leave="transition-transform duration-300 ease-in"
+            leaveFrom="translate-y-0"
+            leaveTo="-translate-y-full"
+          >
+            <div className="fixed top-0 left-0 right-0 h-1/2 bg-[#a53dff] dark:bg-[#a53dff] rounded-b-2xl shadow-lg flex flex-col items-center justify-center gap-6">
+              {/* Close Button */}
               <button
                 onClick={() => setIsOpen(false)}
                 className="absolute top-4 right-4"
@@ -94,26 +110,28 @@ export default function Navbar() {
                 <XMarkIcon className="w-6 h-6 text-white" />
               </button>
 
+              {/* Nav Links */}
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleScroll(e, item.href.replace("#", ""))}
-                  className="text-2xl text-white hover:underline"
+                  className="text-xl text-white hover:underline"
                 >
                   {item.name}
                 </a>
               ))}
 
+              {/* Resume Button */}
               <a
-                href="/resume.pdf"
+                href={resume}
                 download
                 className="mt-4 bg-white text-[#a53dff] px-4 py-2 rounded hover:opacity-90"
               >
                 Resume ↓
               </a>
             </div>
-          </Transition.Child>
+          </TransitionChild>
         </Dialog>
       </Transition>
     </header>

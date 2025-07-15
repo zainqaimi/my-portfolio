@@ -76,8 +76,8 @@ export default function Hero() {
       </div>
 
       {/* Right Content */}
-      <div>
-        <img src={profile} alt="Zain Ul Abdin" className="xl:max-w-lg " />
+      <div className="rounded-xl shadow-md bg-white lg:mb-0 mb-6 pb-0 p-6">
+        <img src={profile} alt="Zain Ul Abdin" className="lg:max-w-md" />
       </div>
     </section>
   );
