@@ -11,8 +11,8 @@ const Counter = ({ target, label }: CounterProps) => {
 
   useEffect(() => {
     let start = 0;
-    const duration = 2000; // 2 seconds
-    const increment = target / (duration / 50); // Update every 50ms
+    const duration = 2000;
+    const increment = target / (duration / 50);
 
     const counter = setInterval(() => {
       start += increment;
@@ -33,7 +33,7 @@ const Counter = ({ target, label }: CounterProps) => {
         {label === "Project Completed"
           ? "+"
           : label === "Experience"
-          ? " Y."
+          ? " Years"
           : ""}
       </h3>
       <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">{label}</p>
@@ -69,7 +69,7 @@ export default function Hero() {
         </button>
         {/* Cards */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <Counter target={1} label="Experience" />
+          <Counter target={2} label="Experience" />
           <Counter target={15} label="Project Completed" />
           <Counter target={5} label="Happy Client" />
         </div>
