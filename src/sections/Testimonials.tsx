@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center  md:px-10 px-5 py-16 mx-auto bg-[#fffcf7] dark:bg-gray-950">
+    <section className="flex flex-col items-center justify-center  md:px-10 px-5 py-16 mx-auto bg-[#fffcf7] dark:bg-gray-950">
       {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">

@@ -134,7 +134,7 @@ export default function Contact() {
                 {
                   icon: <FaPhoneAlt />,
                   label: "Call Me Now:",
-                  value: "0311-7271739",
+                  value: "+923117271739",
                 },
               ].map((item, i) => (
                 <div
