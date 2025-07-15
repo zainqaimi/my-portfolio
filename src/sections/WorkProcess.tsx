@@ -34,7 +34,10 @@ const steps = [
 
 export default function WorkProcess() {
   return (
-    <section className="z-10 md:pt-56 px-6 md:px-10 py-12 bg-[#F0F1F3] dark:bg-gray-900 transition-colors duration-500">
+    <section
+      id="WorkProcess"
+      className="z-10 md:pt-56 px-6 md:px-10 py-12 bg-[#F0F1F3] dark:bg-gray-900 transition-colors duration-500"
+    >
       <div className="mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Text Content */}
         <div className="lg:text-left text-center">

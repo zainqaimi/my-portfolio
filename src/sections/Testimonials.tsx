@@ -65,7 +65,7 @@ const Testimonials: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center md:px-10 px-6 py-16 bg-[#fffcf7] dark:bg-gray-950">
+    <section className="flex flex-col items-center justify-center md:px-10 px-5 py-16 bg-[#fffcf7] dark:bg-gray-950">
       {/* Section Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">
@@ -80,7 +80,7 @@ const Testimonials: React.FC = () => {
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={testimonial.id}
-            className={`relative p-6 rounded-lg shadow-lg w-72 h-80 shadow-purple-500
+            className={`relative p-6 rounded-lg shadow-lg w-64 md:m-72 h-80 shadow-purple-500
             bg-white dark:bg-[#1e1e1e]
             transition-colors duration-300`}
             variants={cardVariants}

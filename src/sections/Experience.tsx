@@ -1,39 +1,74 @@
-import {
-  FaFacebookF,
-  FaDribbble,
-  FaInstagram,
-  FaLinkedinIn,
-  FaBehance,
-} from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import resume from "../assets/resume/ZainUlAbdinResume.pdf";
+import { MdEmail } from "react-icons/md";
+
 export default function Experience() {
   return (
-    <div className="dark:bg-gray-900 transition-colors duration-500  md:px-10 px-6">
+    <div className="dark:bg-gray-900 transition-colors duration-500 md:px-10 px-5">
       <section
         id="home"
-        className=" relative md:-mb-28  flex flex-col lg:flex-row items-center justify-center px-6 md:py-16 py-8 shadow-lg shadow-gray-400 bg-white  rounded-md mx-auto  dark:bg-gray-900 transition-colors duration-500"
+        className="relative md:-mb-28 flex flex-col lg:flex-row items-center justify-center p-5 md:py-16 py-12 shadow-lg shadow-gray-400 bg-white rounded-md mx-auto dark:bg-gray-900 transition-colors duration-500"
       >
         {/* Image + Socials */}
-        <div className="relative mb-10 lg:mb-0">
+        <div className="relative mb-14 lg:mb-0">
           <DotLottieReact
             src="https://lottie.host/52a75cf4-5543-487b-a011-8e97bb5122fa/R9NxdbLGLN.lottie"
             loop
             autoplay
-            className="w-72 h-72 md:w-80 md:h-80 object-cover rounded-xl shadow-xl shadow-purple-300"
+            className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-xl shadow-xl  shadow-purple-300"
           />
-          {/* Social Icons */}
+
+          {/* ✅ Social Icons with Links */}
           <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-800 shadow-lg rounded-lg px-6 py-3 flex gap-4">
-            <FaFacebookF className="text-[#a53dff] cursor-pointer hover:scale-110 transition" />
-            <FaDribbble className="text-[#a53dff] cursor-pointer hover:scale-110 transition" />
-            <FaInstagram className="text-[#a53dff] cursor-pointer hover:scale-110 transition" />
-            <FaLinkedinIn className="text-[#a53dff] cursor-pointer hover:scale-110 transition" />
-            <FaBehance className="text-[#a53dff] cursor-pointer hover:scale-110 transition" />
+            <span
+              onClick={() =>
+                (window.location.href = "mailto:zainqaimi@gmail.com")
+              }
+              rel="noopener noreferrer"
+              className="text-[#a53dff] hover:text-purple-700 transition hover:scale-110"
+            >
+              <MdEmail size={18} />
+            </span>
+            <a
+              href="https://www.facebook.com/zain.qaimi.94"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#a53dff] hover:text-purple-700 transition hover:scale-110"
+            >
+              <FaFacebookF size={18} />
+            </a>
+
+            <a
+              href="https://github.com/zainqaimi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#a53dff] hover:text-purple-700 transition hover:scale-110"
+            >
+              <FaGithub size={18} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/zain-qaimi-8b35b8305/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#a53dff] hover:text-purple-700 transition hover:scale-110"
+            >
+              <FaLinkedin size={18} />
+            </a>
+            <a
+              href="tel:03117271739"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#a53dff] hover:text-purple-700 transition hover:scale-110"
+            >
+              <FaWhatsapp size={18} />
+            </a>
           </div>
         </div>
 
-        {/* Text Content */}
+        {/* ✅ Text Content */}
         <div className="md:ml-16 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             I am a Full‑Stack & Cross‑Platform <br /> Developer
@@ -52,7 +87,7 @@ export default function Experience() {
             digital products.
           </p>
 
-          {/* Buttons */}
+          {/* ✅ Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
@@ -60,6 +95,7 @@ export default function Experience() {
             >
               My Project
             </a>
+
             <a
               href={resume}
               download

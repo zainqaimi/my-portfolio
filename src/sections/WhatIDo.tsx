@@ -69,7 +69,9 @@ const WhatIDo: React.FC = () => {
             software, I deliver high-quality solutions.
           </p>
           <button
-            onClick={() => (window.location.href = "mailto:zain@example.com")}
+            onClick={() =>
+              (window.location.href = "mailto:zainqaimi@gmail.com")
+            }
             className="bg-purple-600 text-white font-medium px-6 py-2 rounded-md hover:bg-purple-700 transition"
           >
             Say Hello!

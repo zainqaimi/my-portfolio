@@ -6,6 +6,7 @@ import resume from "../assets/resume/ZainUlAbdinResume.pdf";
 const navItems = [
   { name: "About Me", href: "#about" },
   { name: "Skills", href: "#skills" },
+  { name: "Work Process", href: "#WorkProcess" },
   { name: "Projects", href: "#projects" },
   { name: "Contact Me", href: "#contact" },
 ];
