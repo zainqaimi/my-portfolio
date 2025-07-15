@@ -26,7 +26,7 @@ export default function ThemeToggle() {
         {theme === "dark" ? (
           <IoSunny className="text-yellow-300" />
         ) : (
-          <AiOutlineMoon className="text-gray-800" />
+          <AiOutlineMoon className="text-white" />
         )}
       </motion.div>
     </motion.button>

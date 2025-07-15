@@ -53,7 +53,7 @@ export default function App() {
       {/* Floating Buttons Container */}
       <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
         {/* Theme Toggle */}
-        <div className=" mb-2 bg-slate-200 text-white dark:bg-purple-500 p-1 rounded-full shadow-sm transition">
+        <div className=" mb-2 bg-slate-900 text-white dark:bg-purple-500 p-1 rounded-full shadow-sm transition">
           <ThemeToggle />
         </div>
         {/* Scroll to Top Button */}

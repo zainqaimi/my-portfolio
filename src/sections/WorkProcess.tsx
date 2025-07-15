@@ -8,27 +8,27 @@ import {
 const steps = [
   {
     icon: <FaCalendarAlt size={24} />,
-    title: "1. Research",
+    title: "1. Plan & Research",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+      "Understand client needs, define clear goals, and choose the right tech stack like React, Next.js, Flutter, or Node.js.",
   },
   {
     icon: <FaChartLine size={24} />,
-    title: "2. Analyze",
+    title: "2. Architecture & Strategy",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+      "Create scalable architecture, plan backend APIs, and design secure database models using MongoDB or SQLite.",
   },
   {
     icon: <FaPencilAlt size={24} />,
-    title: "3. Design",
+    title: "3. Design & Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+      "Develop clean UI with Tailwind/Bootstrap and build fast, optimized apps for web, mobile, and desktop.",
   },
   {
     icon: <FaLaptopCode size={24} />,
-    title: "4. Launch",
+    title: "4. Deploy & Launch",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.",
+      "Deploy projects on Vercel, Netlify, or custom servers, and ensure smooth delivery with ongoing support.",
   },
 ];
 
@@ -39,16 +39,16 @@ export default function WorkProcess() {
         {/* Text Content */}
         <div className="lg:text-left text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Work Process
+            My Work Process
           </h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
-            eget lorem ac vestibulum. Suspendis imperdiet.
+            I follow a clear, step-by-step approach to deliver high-quality web,
+            mobile, and desktop applications. From planning to deployment,
+            everything is optimized for performance and scalability.
           </p>
           <p className="text-gray-700 dark:text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non.
+            This process ensures every project is well-planned, user-friendly,
+            and future-ready.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function WorkProcess() {
             <div
               key={index}
               className={`bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md shadow-gray-300 hover:shadow-xl hover:shadow-gray-400 transition duration-300 ${
-                index % 2 === 0 ? "md:-translate-y-4" : "" // left column cards shift up
+                index % 2 === 0 ? "md:-translate-y-4" : ""
               }`}
             >
               <div className="bg-purple-100 dark:bg-purple-800 text-purple-600 dark:text-purple-200 w-12 h-12 flex items-center justify-center rounded-md mb-4">

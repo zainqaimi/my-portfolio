@@ -36,16 +36,20 @@ export default function Experience() {
         {/* Text Content */}
         <div className="md:ml-16 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            I am Professional User <br /> Experience Designer
+            I am a Full‑Stack & Cross‑Platform <br /> Developer
           </h1>
+
           <p className="text-gray-600 dark:text-gray-300 mb-4 max-w-xl">
-            I design and develop services for customers specializing in stylish,
-            modern websites, web services and online stores. My passion is to
-            design digital user experiences.
+            I build modern, fast, and scalable web & mobile applications using{" "}
+            <strong>React, Next.js, Flutter,</strong> and{" "}
+            <strong>React Native</strong>. I also create secure & optimized
+            backends with <strong>Node.js, Express, MongoDB & SQLite</strong>.
           </p>
+
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-xl">
-            I design and develop services for customers specializing in stylish,
-            modern websites, web services.
+            From responsive websites to mobile apps & even desktop apps with{" "}
+            <strong>Electron</strong>, I help businesses turn ideas into real
+            digital products.
           </p>
 
           {/* Buttons */}

@@ -7,54 +7,44 @@ interface CardItem {
 
 const cards: CardItem[] = [
   {
-    title: "User Experience (UX)",
+    title: "Frontend Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I build modern, responsive, and scalable UIs using React, Next.js, Tailwind CSS, and Bootstrap, ensuring pixel-perfect designs with smooth user experiences.",
   },
   {
-    title: "User Interface (UI)",
+    title: "Backend Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I create secure and optimized backend APIs with Node.js, Express.js, and databases like MongoDB & SQLite for seamless data management.",
   },
   {
-    title: "Web Development",
+    title: "Full-Stack Web Apps",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "From UI to database, I develop complete web solutions integrating frontend and backend for high-performance applications.",
   },
   {
-    title: "App Development",
+    title: "Mobile App Development",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I develop cross-platform mobile apps using React Native & Flutter, delivering smooth performance on both Android and iOS.",
   },
   {
-    title: "Interaction Design",
+    title: "Desktop Apps (Electron)",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I create lightweight and powerful desktop applications with Electron, combining web technologies with native OS integration.",
   },
   {
-    title: "Interaction Design",
+    title: "API Integration",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I integrate third-party APIs, payment gateways, and cloud services to enhance functionality and improve user experience.",
   },
   {
-    title: "Interaction Design",
+    title: "UI/UX Improvements",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I focus on improving usability and accessibility with intuitive designs and seamless navigation for better user engagement.",
   },
   {
-    title: "Interaction Design",
+    title: "Performance Optimization",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
-  },
-  {
-    title: "Interaction Design",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
-  },
-  {
-    title: "Interaction Design",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices eget lorem ac vestibulum.",
+      "I optimize apps for speed, security, and SEO, ensuring best practices for both frontend and backend development.",
   },
 ];
 
@@ -65,18 +55,23 @@ const WhatIDo: React.FC = () => {
         {/* Left Column */}
         <div className="md:w-1/2 self-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            What I do?
+            What I Do?
           </h2>
           <p className="text-gray-500 dark:text-gray-300 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non, laoreet imperdiet orci. Mauris ultrices
-            eget lorem ac vestibulum. Suspendis imperdiet.
+            I’m a Full-Stack Developer specializing in creating fast, scalable,
+            and user-friendly web & mobile applications. From beautiful UI/UX to
+            powerful backend systems, I handle everything to bring your idea to
+            life.
           </p>
           <p className="text-gray-500 dark:text-gray-300 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus
-            arcu, varius eget velit non.
+            My expertise covers React, Next.js, Node.js, MongoDB, React Native,
+            and Flutter. Whether it’s a website, mobile app, or desktop
+            software, I deliver high-quality solutions.
           </p>
-          <button className="bg-purple-600 text-white font-semibold px-5 py-2 rounded hover:bg-purple-700 transition-all">
+          <button
+            onClick={() => (window.location.href = "mailto:zain@example.com")}
+            className="bg-purple-600 text-white font-medium px-6 py-2 rounded-md hover:bg-purple-700 transition"
+          >
             Say Hello!
           </button>
         </div>
