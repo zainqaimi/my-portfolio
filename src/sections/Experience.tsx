@@ -1,7 +1,7 @@
 import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import resume from "../assets/resume/ZainUlAbdinResume.pdf";
+import resume from "../assets/resume/Zain_Ul_Abdin_Resume.pdf";
 import { MdEmail } from "react-icons/md";
 
 export default function Experience() {

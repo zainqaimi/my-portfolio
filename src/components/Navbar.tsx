@@ -2,7 +2,7 @@ import { useState, Fragment } from "react";
 import { Dialog, Transition, TransitionChild } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.svg";
-import resume from "../assets/resume/ZainUlAbdinResume.pdf";
+import resume from "../assets/resume/Zain_Ul_Abdin_Resume.pdf";
 
 const navItems = [
   { name: "About Me", href: "#about" },
