@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import img1 from "../assets/images/testimonals.png";
-
+import img2 from "../assets/images/mudassir.png";
 const testimonials = [
   {
     id: 1,
+    img: img1,
     name: "Bastien Paul",
     feedback:
       "We've tried various tools and Emailwarmup has definitely been the best for a number of reasons.",
@@ -12,13 +13,15 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Colie Goodrich",
+    img: img2,
+    name: "Muhammad Mudassir",
     feedback:
       "Tarique was very professional and made the buying process easy and at a fair price.I would highly recommend buying from him and plan to buy from him again.",
     rating: 5,
   },
   {
     id: 3,
+    img: img1,
     name: "Mark Hoffman",
     feedback: "My reviewer is super excited being part of happy addon family.",
     rating: 3,
@@ -91,7 +94,7 @@ const Testimonials: React.FC = () => {
           >
             <div className="flex items-center space-x-4 mb-4 object-cover">
               <img
-                src={img1}
+                src={testimonial.img}
                 alt={testimonial.name}
                 className="w-12 h-12 rounded-md"
               />
