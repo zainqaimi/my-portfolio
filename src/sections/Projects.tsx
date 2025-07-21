@@ -6,6 +6,8 @@ import card3 from "../assets/images/stylishApp.jpg";
 import card4 from "../assets/images/ecomerce..png";
 import card5 from "../assets/images/gatsby.png";
 import card6 from "../assets/images/swift.png";
+import card7 from "../assets/images/inventory.jpg";
+import card9 from "../assets/images/inventory.png";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const cards = [
@@ -63,6 +65,24 @@ const cards = [
     description:
       "A fully animated and design-centric web experience built with Next.js. It features stunning Lottie animations, interactive cards, smooth carousels, and unique UI/UX transitions that push the boundaries of modern web design.",
     visitLink: "https://github.com/Mudassirkz/swift-space.git",
+  },
+  {
+    id: 7,
+    image: card7,
+    badge: "Desktop App",
+    title: "Inventory Management Software",
+    description:
+      "A cross-platform inventory management software built with React, Vite, Electron, TailwindCSS, and ShadCN UI. It features online & offline sync, a complete backend with better-sqlite database, and a modern desktop-friendly UI.",
+    visitLink: "https://github.com/zainqaimi/electron-invoiceApp.git",
+  },
+  {
+    id: 9,
+    image: card9,
+    badge: "Web App",
+    title: "Invoice & Inventory Management App",
+    description:
+      "A MERN stack-based invoice and inventory management app built with React, Vite, TailwindCSS, and Ant Design for a sleek UI. It includes invoice generation, product management, and a secure Node.js & Express backend with MongoDB.",
+    visitLink: "https://github.com/zainqaimi/invoice-App.git",
   },
 ];
 

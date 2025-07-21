@@ -31,7 +31,7 @@ export default function Navbar() {
     <header className="bg-white dark:bg-gray-900 dark:shadow-black shadow-gray-100 shadow-sm">
       <nav className="flex items-center justify-between px-6 md:px-10 py-4 mx-auto ">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 cursor-pointer">
           <img src={logo} alt="Logo" className="h-8 w-auto" />
           <span className="text-black dark:text-white font-bold text-lg">
             ZAIN UL ABDIN
