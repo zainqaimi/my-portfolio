@@ -1,58 +1,59 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import card1 from "../assets/card-1.svg";
-import card2 from "../assets/card_2.svg";
-import card3 from "../assets/card_3.svg";
-import card4 from "../assets/card_4.svg";
-import card5 from "../assets/card_5.svg";
-import card6 from "../assets/card-6.svg";
+import card1 from "../assets/images/chatApp.jpeg";
+import card2 from "../assets/images/blinkit.jfif";
+import card3 from "../assets/images/stylishApp.jpg";
+import card4 from "../assets/images/ecomerce..png";
+import card5 from "../assets/images/gatsby.png";
+import card6 from "../assets/images/swift.png";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const cards = [
   {
     id: 1,
     image: card1,
-    badge: "Website",
-    title: "Modern Portfolio Website",
+    badge: "Mobile App",
+    title: "Real-Time Chat App",
     description:
-      "A sleek and responsive personal portfolio built with React and TailwindCSS, featuring smooth animations, a dark mode toggle, and SEO-friendly architecture.",
-    visitLink: "#",
+      "A WhatsApp-like real-time chat application built with React Native and Firebase. It features secure authentication, live contact syncing, instant messaging, and a clean mobile-friendly UI.",
+    visitLink: "https://github.com/zainqaimi/chatApp-cli.git",
   },
   {
     id: 2,
     image: card2,
     badge: "Mobile App",
-    title: "Fitness Tracker App",
+    title: "Blinkit Clone App",
     description:
-      "A cross-platform fitness tracking mobile application built with React Native. It includes step tracking, calorie counting, and progress analytics with cloud sync.",
-    visitLink: "#",
+      "A sleek grocery delivery app clone built with Flutter, featuring a splash screen, login authentication, responsive UI with 6 custom screens, and an interactive carousel for showcasing products.",
+    visitLink: "https://github.com/zainqaimi/Blinkit-clone.git",
   },
   {
     id: 3,
     image: card3,
-    badge: "Desktop App",
-    title: "Productivity Dashboard",
+    badge: "Mobile App",
+    title: "StylishApp Clone",
     description:
-      "A desktop productivity app designed with Electron and TypeScript. It offers task management, note-taking, and integrations with Google Calendar and Slack.",
-    visitLink: "#",
+      "A multi-screen mobile app built with React Native (Expo) featuring a smooth splash screen, onboarding carousel, and 12 responsive screens. Integrated with Firebase Authentication for secure login and Redux for state management.",
+    visitLink: "https://github.com/zainqaimi/Native-expo-StylishApp.git",
   },
   {
     id: 4,
     image: card4,
-    badge: "Website",
-    title: "E-commerce Platform",
+    badge: "Web App",
+    title: "E‑Commerce Web App",
     description:
-      "A scalable e-commerce solution featuring a fully functional shopping cart, Stripe payment gateway, and an intuitive admin dashboard for managing products.",
-    visitLink: "#",
+      "A full-featured e‑commerce web application built with React, featuring Firebase authentication for login & sign-up, product cards with slider and skeleton loading, and Redux Toolkit for cart, state management, and complete order flow.",
+    visitLink: "https://github.com/zainqaimi/E-Commerce.git",
   },
+
   {
     id: 5,
     image: card5,
-    badge: "Mobile App",
-    title: "Travel Companion App",
+    badge: "Landing Page",
+    title: "Responsive Landing Page (Gatsby.js)",
     description:
-      "A travel planning app with AI-based itinerary suggestions, offline map support, hotel booking, and multi-language translations for an effortless travel experience.",
-    visitLink: "#",
+      "A modern and fully responsive landing page built with Gatsby.js, featuring smooth layouts, optimized performance, and clean UI design. A practice project to explore static site generation and responsive design principles.",
+    visitLink: "https://github.com/zainqaimi/gatsbyjs-ProjectOne.git",
   },
   {
     id: 6,
