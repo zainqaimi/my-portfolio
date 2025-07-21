@@ -58,11 +58,11 @@ const cards = [
   {
     id: 6,
     image: card6,
-    badge: "Website",
-    title: "Learning Management System",
+    badge: "Web App",
+    title: "Swift Space – Animated Web Experience",
     description:
-      "A robust LMS platform for online education, supporting live classes, quizzes, assignments, and progress tracking for both teachers and students.",
-    visitLink: "#",
+      "A fully animated and design-centric web experience built with Next.js. It features stunning Lottie animations, interactive cards, smooth carousels, and unique UI/UX transitions that push the boundaries of modern web design.",
+    visitLink: "https://github.com/Mudassirkz/swift-space.git",
   },
 ];
 
